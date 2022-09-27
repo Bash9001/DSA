@@ -1,6 +1,7 @@
-"""Queue data type using a list."""
+from queue import Empty
 
 class Queue:
+    """Queue data type using a list."""
     def __init__(self):
         self._data = []
 
@@ -9,7 +10,7 @@ class Queue:
         return len(self._data)
 
     def is_empty(self):
-        """Returns True if the Queue is empty and False if it has contents."""
+        """Returns True if the Queue."""
         return len(self._data) == 0
 
     def enqueue(self, x):
@@ -17,16 +18,16 @@ class Queue:
         self._data.append(x)
         
     def dequeue(self):
-        """Removes and returns the element at the start of the Queue. Raises an exception if the Queue is empty."""
+        """Removes and returns the element at the start of the Queue."""
         if len(self._data) == 0:
-            raise IndexError("Queue is empty.")
+            raise Empty("Queue is empty.")
         result = self._data[0]
         self._data[0:] = self._data[1:]
         self._data[:-1]
         return result
 
     def first(self):
-        """Returns the first element from the Queue but does not remove it. Raises and exception if the Queue is empty."""
+        """Returns the first element from the Queue but does not remove it."""
         if len(self._data) == 0:
-            raise AttributeError("Queue is empty")
+            raise Empty("Queue is empty")
         return self._data[0]
