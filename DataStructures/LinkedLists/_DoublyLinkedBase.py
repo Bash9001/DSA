@@ -1,7 +1,7 @@
 class _DoublyLinkedBase:
     """Nonpublic doubly linked list made up of individual nodes, each comprising of an element and pointers for the previous and next nodes."""
-    
-    #-----------------------------Nested _Node class-----------------------------
+
+    #-------------------------- Nested _Node class --------------------------
     class _Node:
         """Nonpublic class for indivual nodes in a linked list."""
         __slots__ = 'element', 'prev', 'next'
@@ -11,7 +11,7 @@ class _DoublyLinkedBase:
             self._prev = prev
             self._next = next
 
-    #-----------------------------Linked List methods-----------------------------
+    #-------------------------- Linked List methods --------------------------
     def __init__(self):
         self._header = self._Node(None, None, None)
         self._trailer = self._Node(None, None, None)
