@@ -1,13 +1,9 @@
-# Data Structures & Algorithms (DSA)
+# Data Structures
 
-A Python library of commonly used abstract data types and algorithms.
+A Python library of commonly used data structures and their respective algorithms to display my understanding of computer science concepts.
 
 ## Importing
 
-'import DSA' to import the complete library.
+'import DataStructures' to import the complete library.
 
-'import Algorithms from DSA' to import the complete Algorithms sub-library.
-
-'import DataStructures from DSA' to import the complete Data structures sub-library.
-
-Individual modules can be imported from either sub-library.
+Individual modules can be imported from their respective sub-libraries.
